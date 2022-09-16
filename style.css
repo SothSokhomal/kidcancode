@@ -1,0 +1,463 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+body{
+    background-color: aquamarine;
+    font-family: 'Courier New', Courier, monospace;
+    width:90%;
+    margin: 0 auto;
+    
+
+}
+
+
+.logo{
+    display: inline-block;
+    width: 30%;
+    text-align: center;
+    padding-top: 10px;
+
+
+}
+
+.logo a{
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 15px;
+    text-shadow: 3px -3px 3px plum;
+    color: blue;
+    padding-top: 10px;
+    
+}
+
+nav{
+    background-color: aliceblue;
+    height: 100px;
+    padding-top: 20px;
+    transition: background-color 1s;
+}
+
+nav:hover{
+    background-color: lightblue;
+}
+nav ul{
+    list-style-type: none;
+    float: right;
+    width: 55%;
+    margin-top: 10px;
+
+}
+
+nav ul li {
+    display: inline-block;
+    width: 25%;
+    border-right: 3px solid black;
+    
+}
+nav ul li:last-child {
+    border: none;
+}
+nav ul li a{
+    text-decoration: none;
+    color: cornflowerblue;
+    padding: 10px;
+    margin: 10px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.banner{
+    height: 500px;
+    background-image: url('img/banner-2.png');
+    background-size: cover;
+    background-position: top left;
+}
+
+.banner div{
+    height: 100px;
+}
+
+.first{
+    font-size: 40px;
+    animation: move 4s linear infinite alternate-reverse;
+    padding-top: 15px;
+
+}
+
+@keyframes move{
+    from {
+        margin-left: 0%;
+    }
+
+    50%{
+        font-size: 50%;
+        color: blue;
+        
+    }
+
+    to{
+        margin-left: 90%;
+        color: purple;
+    }
+}
+
+
+.second{
+    text-align: center;
+    font-size: 64px;
+    padding-top: 12px;
+    color: rgb(3, 229, 229);
+    height: 0px;
+    overflow: hidden;
+    animation: appear 2s linear infinite;
+}
+
+
+@keyframes appear{
+    from{
+        height: 0px;
+        overflow: hidden;
+        color: rgb(109, 245, 245);
+    }
+
+    to{
+        height: 100px;
+        overflow: hidden;
+        
+    }
+}
+
+
+.third{
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    font-weight: bold;
+    transform: translateY(75px);
+
+    animation: flyup 2s linear infinite;
+}
+
+@keyframes flyup{
+    0%{
+        transform: translateY(75px) scale(1);
+        opacity: 0%;
+        color: rgb(85, 141, 244);
+    }
+
+    100%{
+        transform: translateY(0px) scale(1.2);
+        opacity: 100%;
+       
+    }
+}
+
+.title{
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    text-shadow: 0px -3px 3px grey ;
+    text-align: center;
+    padding-top: 10px;
+    letter-spacing: 2px;
+}
+
+
+.journey{
+    height: 350px;
+    background-color: grey;
+}
+
+.slideshow{
+    height: 270px;
+    width: 80%;
+    background-color: rgb(174, 241, 174);
+    margin: 0 auto;
+    background-image: url('img/2019.jpg');
+    background-position: center;
+    background-size: cover;
+    animation: slideshow 4s linear infinite ;
+}
+
+@keyframes slideshow{
+    0%{
+        background-image: url('img/2019.jpg');
+    }
+
+    10%{
+        background-image: url('img/2020.jpg');
+    }
+
+    20%{
+        background-image: url('img/2021.jpg');
+    }
+
+    100%{
+        background-image: url('img/2022.jpg');
+    }
+}
+
+
+.courses{
+    background-color: lightgray;
+    height: 1000px;
+}
+
+.courses-card{
+    height: 200px;
+    width: 80%;
+    background-color: darkgray;
+    margin: 0 auto;
+    border: 2px solid white;
+    border-radius: 15px;
+    margin-top: 15px;
+    overflow: hidden;
+}
+
+.courses-card img{
+    height: 100% ;
+    width: 20% ;
+    object-fit: cover;
+    border-radius: 15px 0 0 15px;
+    float: left;
+}
+
+.courses-info{
+    width: 80%;
+    float: right;
+    padding: 15px;
+}
+.courses-info h3,
+.courses-info h4,
+.courses-info p {
+    margin-top: 10px
+}
+
+.courses-info h3{
+    color: blue;
+    font-weight: bold;
+}
+.level{
+    color: brown;
+    font-weight: bold;
+}
+
+.prices{
+    background-color: grey;
+    height: 400px;
+}
+
+table{
+    width: 90%;
+    text-align: center;
+    margin: 0 auto;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+thead{
+    height: 58px;
+    background-color:lightskyblue ;
+    
+}
+
+thead tr th:first-child{
+    height: 50%;
+}
+
+thead tr th:nth-child(3){
+    width: 30%;
+}
+
+
+tbody tr{
+    height: 50px;
+}
+
+tbody tr:nth-child(odd) {
+    background-color:rgb(0, 146, 146) ;
+}
+
+tbody tr:nth-child(even){
+    background-color: whitesmoke;
+}
+
+tbody tr:hover{
+    background-color: lightslategray;
+}
+
+
+
+.teachers{
+    background-color: lightgrey;
+    height: 350px;
+    text-align: center;
+}
+
+.teacher-card{
+    width: 200px;
+    height: 250px;
+    text-align: center;
+    padding: 10px;
+    background-color: white;
+    border: 2px solid white;
+    border-radius: 15px;
+    box-shadow: 4px 4px 4px lightslategrey;
+    overflow: hidden;
+    display: inline-block;
+    margin: 0 auto;
+
+    transition: all 1s linear;
+    margin: 15px;
+    
+}
+
+.teacher-card img{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    box-shadow: 3px 3px 3px grey;
+
+}
+
+.teacher-card:hover{
+    transform: scale(1.1);
+}
+.teacher-card h4{
+    font-weight: bold;
+}
+
+.teacher-card h3{
+    color: darkgreen;
+}
+
+.ask-q{
+    background-color: grey;
+    height: 250px;
+}
+
+
+
+.contact{
+    background-color: lightgrey;
+    height: 300px;
+    
+}
+
+
+/* .contact-card{
+    background-color:rgb(153, 198, 235);
+    height: 200px;
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+} */
+
+
+.num{
+    padding: 5px;
+    background-color: brown;
+    font-weight: bold;
+    margin-left: 15px;
+    outline-color: white;
+}
+
+.ask-q a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 15px;
+    
+    
+}
+
+.ask-q article{
+    height: 0;
+    background-color:beige;
+    overflow: hidden;
+
+    transition:all 500ms;
+}
+
+.ask-q article:target{
+    height: 200px;
+}
+.ask-q p{
+    margin-bottom: 10px;
+}
+
+#reg_form{
+    background-color: lightsteelblue;
+    width: 50%;
+    border-radius: 10px;
+    margin: 0 auto;
+    margin-top: 10px;
+    
+
+}
+
+input, label, button, select{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font: 25px;
+    padding: 5px;
+    font-weight: bold;
+    display: inline-block;
+    
+}
+
+label{
+    width: 50%;
+    margin: 10px;
+}
+
+input, select{
+    padding: 5px 15px;
+    border-radius: 10px;
+}
+
+input:focus{
+    outline: none;
+}
+
+
+
+button{
+    width: 20%;
+    background-color: green;
+    color: white;
+    margin-left: 270px;
+    border-radius: 10px;
+}
+
+
+row:last-child{
+    text-align: center;
+}
+
+
+.footer{
+    background-color:azure;
+    color: black;
+    font-weight:bold;
+    font-size: 20px;
+    margin-top: 50px;
+    padding: 10px;
+}
+
+.footer p{
+    text-align: center;
+}
+
+.footer img{
+    width: 3%;
+    height: 3%;
+    margin-left: 20px;
+    display: inline-block;
+}
+
